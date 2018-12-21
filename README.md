@@ -5,8 +5,8 @@ final-lab-AkliBOUHASSI created by GitHub Classroom
 Dans ce projet, on dispose d'un dataset 'Tobacco' qui est un ensemble de 3482 documents texts et photos repartie sur 10 classes. On va étudier que la partie text de ce dataset.
 
 # Analyse des données:
-On charge les données et on vérifie qu'il y a pas de valeur manquante
-On affiche nos données 
+1. On charge les données et on vérifie qu'il y a pas de valeur manquante
+2. On affiche nos données 
 
 img_path	label
 0	Advertisement/0000136188.jpg	Advertisement
@@ -14,4 +14,10 @@ img_path	label
 2	Advertisement/0000556056.jpg	Advertisement
 3	Advertisement/0030048095.jpg	Advertisement
 4	Advertisement/0030048989.jpg	Advertisement
+
+3. on cherche a prédire les classes a partir des fichiers text. On remarque qu'on a les liens vers les fichiers photos et pas text. Par contre ils ont le meme nom sauf l'extension donc il suffit de changer '.jpg' par '.txt' pour pouvoir lire les fichiers text. Ensuite, on remplace le lien vers les text par le text qui correspond.
+
+4. On change le nom des colomns en text et label
+
+5. On affiche les répartitions des classes
 
