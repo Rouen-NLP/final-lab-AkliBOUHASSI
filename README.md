@@ -7,14 +7,60 @@ Dans ce projet, on dispose d'un dataset 'Tobacco' qui est un ensemble de 3482 do
 
 # Analyse des données:
 1. On charge les données et on vérifie qu'il y a pas de valeur manquante
-2. On affiche nos données 
+2. On affiche nos données pour avoir une première idée. 
 
-img_path	label
-0	Advertisement/0000136188.jpg	Advertisement
-1	Advertisement/0000435350.jpg	Advertisement
-2	Advertisement/0000556056.jpg	Advertisement
-3	Advertisement/0030048095.jpg	Advertisement
-4	Advertisement/0030048989.jpg	Advertisement
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>img_path</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Advertisement/0000136188.jpg</td>
+      <td>Advertisement</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Advertisement/0000435350.jpg</td>
+      <td>Advertisement</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Advertisement/0000556056.jpg</td>
+      <td>Advertisement</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Advertisement/0030048095.jpg</td>
+      <td>Advertisement</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Advertisement/0030048989.jpg</td>
+      <td>Advertisement</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 3. on cherche a prédire les classes a partir des fichiers text. On remarque qu'on a les liens vers les fichiers photos et pas text. Par contre ils ont le même nom sauf l'extension donc il suffit de changer '.jpg' par '.txt' pour pouvoir lire les fichiers text. Ensuite, on remplace le lien vers les text par le text qui correspond.
 
@@ -23,7 +69,7 @@ img_path	label
 5. On affiche les répartitions des classes
 /Users/Akli/Desktop/M2SD/TextAnalysis/Final_Lab/final-lab-AkliBOUHASSI/stat.png
 
-On remarque que les données ne sont pas vraiment déséquilibrés malgres que les classes memo email letter et form representent plus de la moitié mais on peut dire qu'on aura meilleur classification pour les classes les plus représentées
+On remarque que les données ne sont pas vraiment déséquilibrés malgres que les classes memo email letter et form représentent plus de la moitié mais on peut dire qu'on aura meilleur classification pour les classes les plus représentées
 
 # Préparation des données 
 Pour appliquer des algorithmes d'apprentissage automatique aux textes, les documents doivent être transformés en vecteurs. Le moyen le plus simple de transformer un document en vecteur est Le Bag of Word BoG.
