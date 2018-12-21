@@ -70,14 +70,14 @@ Avec TFIDF on obtient une recall plus petit
 Maintenant On cherche a déterminer les meilleurs paramètres avec gridsearcv on obtient alpha = 1
 
 ##Regression logistique
-En appliquant algorithme de Regression logistique on obtient précision 77% de et un recall de 77% qui est le meilleur résultat obtenu
+En appliquant algorithme de Regression logistique on obtient précision 79% de et un recall de 79% qui est le meilleur résultat obtenu
  
 
 # Deep Learning
 J'ai appliqué réseau récurrent (LSTM) plus la convolution sur les données avec 15 epochs. j'ai obtenu précision 74% de et un recall de 72%
 
 # Conclusion
-L'algorithme qui a marche le mieux sur ces données est la régression logistique avec une précision de 77% et un recall de 77%
+L'algorithme qui a marche le mieux sur ces données est la régression logistique avec une précision de 79% et un recall de 79%
  
 par contre on aurait pu avoir de meilleur résultat avec un CNN si on avait plus de données 
 et si on avait appliquer aussi sur les images.
