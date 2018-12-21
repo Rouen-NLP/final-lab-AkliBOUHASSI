@@ -54,7 +54,7 @@ Dans ce projet, on dispose d'un dataset 'Tobacco' qui est un ensemble de 3482 do
 4. On change le nom des colomns en text et label
 
 5. On affiche les répartitions des classes
-/Users/Akli/Desktop/M2SD/TextAnalysis/Final_Lab/final-lab-AkliBOUHASSI/stat.png
+![png](stat.png)stat.png
 
 On remarque que les données ne sont pas vraiment déséquilibrés malgres que les classes memo email letter et form représentent plus de la moitié mais on peut dire qu'on aura meilleur classification pour les classes les plus représentées
 
